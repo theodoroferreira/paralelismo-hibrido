@@ -117,7 +117,7 @@ Esta arquitetura minimiza comunicação e sincronização: OpenMP realiza agrega
 
 \subsection{Ambiente Experimental}
 
-Os experimentos foram realizados em um processador AMD Ryzen 5 7600X com 6 núcleos físicos (12 threads lógicos via SMT), 32GB de RAM DDR5-5800MHz, executando Linux. A configuração utilizou 6 processos MPI com 12 threads OpenMP cada, totalizando 72 workers paralelos.
+Os experimentos foram realizados em um processador AMD Ryzen 5 7600X com 6 núcleos físicos (12 threads lógicos via SMT), 32GB de RAM DDR5-5800MHz, executando Windows. A configuração utilizou 6 processos MPI com 12 threads OpenMP cada, totalizando 72 workers paralelos.
 
 \subsection{Resultados Experimentais}
 
@@ -132,12 +132,12 @@ A Tabela~\ref{tab:results} apresenta os resultados para diferentes volumes de po
 \hline
 \textbf{Pontos} & \textbf{Tempo (s)} & \textbf{Erro Relativo} & \textbf{Throughput} \\
 \hline
-$10^6$ & 0,037 & 0,0002338435\% & 27,1 MP/s \\
-$10^8$ & 0,102 & 0,0048900805\% & 978,6 MP/s \\
-$10^9$ & 0,778 & 0,0024851595\% & 1.285,3 MP/s \\
-$10^{10}$ & 7,086 & 0,0002899291\% & 1.411,2 MP/s \\
-$10^{11}$ & 71,007 & 0,0001372307\% & 1.408,4 MP/s \\
-$10^{12}$ & 731,822 & 0,0001587808\% & 1.366,7 MP/s \\
+$10^6$ & 0,037 & 0,000234\% & 27,1 MP/s \\
+$10^8$ & 0,102 & 0,004890\% & 978,6 MP/s \\
+$10^9$ & 0,778 & 0,002485\% & 1.285,3 MP/s \\
+$10^{10}$ & 7,086 & 0,000290\% & 1.411,2 MP/s \\
+$10^{11}$ & 71,007 & 0,000137\% & 1.408,4 MP/s \\
+$10^{12}$ & 731,822 & 0,000159\% & 1.366,7 MP/s \\
 \hline
 \end{tabular}
 \end{table}
